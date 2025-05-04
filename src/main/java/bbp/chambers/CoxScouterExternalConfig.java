@@ -180,7 +180,7 @@ public interface CoxScouterExternalConfig extends Config
 	@ConfigItem(
 		position = 13,
 		keyName = "hideOverlayInOlm",
-		name = "Hide overlay in Olm Room",
+		name = "Hide overlay in olm room",
 		description = "Do not show overlay while in olm"
 	)
 	default boolean hideInOlm() {
