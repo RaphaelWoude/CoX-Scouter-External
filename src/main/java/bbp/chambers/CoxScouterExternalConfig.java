@@ -35,10 +35,10 @@ import java.awt.Color;
 public interface CoxScouterExternalConfig extends Config
 {
 	@ConfigItem(
-			position = 0,
-			keyName = "showTutorialOverlay",
-			name = "Show tutorial overlay",
-			description = "Whether to show an overlay to help understand how to use the plugin"
+		position = 0,
+		keyName = "showTutorialOverlay",
+		name = "Show tutorial overlay",
+		description = "Whether to show an overlay to help understand how to use the plugin"
 	)
 	default boolean showTutorialOverlay()
 	{
@@ -46,10 +46,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 1,
-			keyName = "scoutOverlay",
-			name = "Show scout overlay",
-			description = "Display an overlay that shows the current raid layout (when entering lobby)"
+		position = 1,
+		keyName = "scoutOverlay",
+		name = "Show scout overlay",
+		description = "Display an overlay that shows the current raid layout (when entering lobby)"
 	)
 	default boolean scoutOverlay()
 	{
@@ -57,10 +57,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 2,
-			keyName = "displayFloorBreak",
-			name = "Layout floor break",
-			description = "Displays floor break in layout"
+		position = 2,
+		keyName = "displayFloorBreak",
+		name = "Layout floor break",
+		description = "Displays floor break in layout"
 	)
 	default boolean displayFloorBreak()
 	{
@@ -68,10 +68,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 3,
-			keyName = "screenshotHotkey",
-			name = "Scouter screenshot hotkey",
-			description = "Hotkey used to screenshot the scouting overlay"
+		position = 3,
+		keyName = "screenshotHotkey",
+		name = "Scouter screenshot hotkey",
+		description = "Hotkey used to screenshot the scouting overlay"
 	)
 	default Keybind screenshotHotkey()
 	{
@@ -79,10 +79,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 4,
-			keyName = "showRecommendedItems",
-			name = "Show recommended items",
-			description = "Adds overlay with recommended items to scouter"
+		position = 4,
+		keyName = "showRecommendedItems",
+		name = "Show recommended items",
+		description = "Adds overlay with recommended items to scouter"
 	)
 	default boolean showRecommendedItems()
 	{
@@ -90,10 +90,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 5,
-			keyName = "recommendedItems",
-			name = "Recommended items",
-			description = "User-set recommended items in the form: [muttadiles,ice barrage,zamorak godsword],[tekton,elder maul], ..."
+		position = 5,
+		keyName = "recommendedItems",
+		name = "Recommended items",
+		description = "User-set recommended items in the form: [muttadiles,ice barrage,zamorak godsword],[tekton,elder maul], ..."
 	)
 	default String recommendedItems()
 	{
@@ -101,10 +101,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 6,
-			keyName = "highlightedRooms",
-			name = "Highlighted rooms",
-			description = "Display highlighted rooms in a different color on the overlay. Separate with comma (full name)"
+		position = 6,
+		keyName = "highlightedRooms",
+		name = "Highlighted rooms",
+		description = "Display highlighted rooms in a different color on the overlay. Separate with comma (full name)"
 	)
 	default String highlightedRooms()
 	{
@@ -112,10 +112,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 7,
-			keyName = "highlightColor",
-			name = "Highlight color",
-			description = "The color of highlighted rooms"
+		position = 7,
+		keyName = "highlightColor",
+		name = "Highlight color",
+		description = "The color of highlighted rooms"
 	)
 	default Color highlightColor()
 	{
@@ -123,10 +123,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 8,
-			keyName = "hideMissingHighlighted",
-			name = "Hide missing highlighted",
-			description = "Completely hides raids missing highlighted room(s)"
+		position = 8,
+		keyName = "hideMissingHighlighted",
+		name = "Hide missing highlighted",
+		description = "Completely hides raids missing highlighted room(s)"
 	)
 	default boolean hideMissingHighlighted()
 	{
@@ -134,10 +134,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 9,
-			keyName = "highlightedShowThreshold",
-			name = "Show threshold",
-			description = "The number of highlighted rooms needed to show the raid. 0 means no threshold."
+		position = 9,
+		keyName = "highlightedShowThreshold",
+		name = "Show threshold",
+		description = "The number of highlighted rooms needed to show the raid. 0 means no threshold."
 	)
 	default int highlightedShowThreshold()
 	{
@@ -145,10 +145,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 10,
-			keyName = "hideBlacklist",
-			name = "Hide raids with blacklisted",
-			description = "Completely hides raids containing blacklisted room(s)"
+		position = 10,
+		keyName = "hideBlacklist",
+		name = "Hide raids with blacklisted",
+		description = "Completely hides raids containing blacklisted room(s)"
 	)
 	default boolean hideBlacklisted()
 	{
@@ -156,10 +156,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 11,
-			keyName = "hideMissingLayout",
-			name = "Hide missing layout",
-			description = "Completely hides raids missing a whitelisted layout"
+		position = 11,
+		keyName = "hideMissingLayout",
+		name = "Hide missing layout",
+		description = "Completely hides raids missing a whitelisted layout"
 	)
 	default boolean hideMissingLayout()
 	{
@@ -167,10 +167,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 12,
-			keyName = "hideRopeless",
-			name = "Hide ropeless raids",
-			description = "Completely hides raids missing a tightrope"
+		position = 12,
+		keyName = "hideRopeless",
+		name = "Hide ropeless raids",
+		description = "Completely hides raids missing a tightrope"
 	)
 	default boolean hideRopeless()
 	{
@@ -178,10 +178,10 @@ public interface CoxScouterExternalConfig extends Config
 	}
 
 	@ConfigItem(
-			position = 13,
-			keyName = "hideOverlayInOlm",
-			name = "Hide overlay in Olm Room",
-			description = "Do not show overlay while in olm"
+		position = 13,
+		keyName = "hideOverlayInOlm",
+		name = "Hide overlay in Olm Room",
+		description = "Do not show overlay while in olm"
 	)
 	default boolean hideInOlm() {
 		return true;
