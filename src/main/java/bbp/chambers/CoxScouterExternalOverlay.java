@@ -71,6 +71,8 @@ public class CoxScouterExternalOverlay extends OverlayPanel
 	private static final int BORDER_OFFSET = 2;
 	private static final int ICON_SIZE = 32;
 	private static final int SMALL_ICON_SIZE = 21;
+	private static final int OLM_PLANE = 0;
+	private static final int OLM_X = 3200, OLM_X2 = 3263, OLM_Y = 5697, OLM_Y2 = 5759;
 
 	private final Client client;
 	private final CoxScouterExternalPlugin plugin;
@@ -144,8 +146,8 @@ public class CoxScouterExternalOverlay extends OverlayPanel
 		boolean olm = false;
 		if (config.hideInOlm()) {
 			WorldPoint location = WorldPoint.fromLocalInstance(client, client.getLocalPlayer().getLocalLocation());
-			olm = location.getPlane() == 0 && location.getX() >= 3200 && location.getX() <= 3263 &&
-					location.getY() >= 5697 && location.getY() <= 5759;
+			olm = location.getPlane() == OLM_PLANE && location.getX() >= OLM_X && location.getX() <= OLM_X2 &&
+					location.getY() >= OLM_Y && location.getY() <= OLM_Y2;
 		}
 
 		if (olm) {
