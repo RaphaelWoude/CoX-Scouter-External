@@ -40,6 +40,7 @@ import static net.runelite.api.MenuAction.RUNELITE_OVERLAY;
 import static net.runelite.api.MenuAction.RUNELITE_OVERLAY_CONFIG;
 
 import net.runelite.api.SpriteID;
+import net.runelite.api.coords.WorldPoint;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.game.ItemManager;
 import net.runelite.client.game.SpriteManager;
@@ -138,6 +139,17 @@ public class CoxScouterExternalOverlay extends OverlayPanel
 		if (enabledWhitelist && !plugin.getLayoutWhitelist().contains(layout.toLowerCase()))
 		{
 			color = Color.RED;
+		}
+
+		boolean olm = false;
+		if (config.hideInOlm()) {
+			WorldPoint location = WorldPoint.fromLocalInstance(client, client.getLocalPlayer().getLocalLocation());
+			olm = location.getPlane() == 0 && location.getX() >= 3200 && location.getX() <= 3263 &&
+					location.getY() >= 5697 && location.getY() <= 5759;
+		}
+
+		if (olm) {
+			return null;
 		}
 
 		boolean hide = false;
