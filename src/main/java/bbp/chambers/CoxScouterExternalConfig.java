@@ -31,7 +31,7 @@ import net.runelite.client.config.Keybind;
 
 import java.awt.Color;
 
-@ConfigGroup("coxscouterexternalplus")
+@ConfigGroup("coxscouterexternal")
 public interface CoxScouterExternalConfig extends Config
 {
 	@ConfigItem(
